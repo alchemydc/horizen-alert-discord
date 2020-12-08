@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+bin/
+lib/
+pyvenv.cfg
+
+# env secrets
+*.env
+!.env-template
+
+# ide stuff
+*.code-workspace
+.vscode
