@@ -4,7 +4,7 @@
 [Horizen](https://www.horizen.io/), née Zencash, is a fork of [Zcash](https://z.cash), which introduces a masternode system 
 that incentivizes participants to operate what they call [SecureNodes](https://www.horizen.io/securenodes/) and [SuperNodes](https://www.horizen.io/supernodes/) on the network.
 
-These nodes do not mine, but are incentivized to expose TCP listeners to other users (with valid TLS certs), validate transactions and also perform a Sprout shielded transaction about once a day.
+These nodes do not mine, but are incentivized to expose TCP listeners to other users (with valid TLS certs), relay and validate transactions, and also perform a Sprout shielded transaction about once a day.
 
 This script uses the [Horizen Secure Node API](https://securenodes2.na.zensystem.io/about/api) to enumerate any downtimes or exceptions that would exclude your nodes from being paid their rewards, and notifies via a Discord webhook, and is designed to be run from cron or as a cloud function.
 
@@ -38,7 +38,8 @@ git clone https://github.com/alchemydc/horizen-alert-discord.git
 4. Create and activate a python virtual environment
 (recommended to keep deps separate from system python)
 ```console
-python3 -m virtualenv . && source bin/activate
+cd horizen-alert-discord
+python3 -m venv . && source bin/activate
 ```
 
 5. Install python dependencies
