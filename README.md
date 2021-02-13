@@ -11,7 +11,7 @@ This script uses the [Horizen Secure Node API](https://securenodes2.na.zensystem
 ![alt text](https://www.horizen.io/assets/img/icons/securenodes.png)
 
 ## Gratitude
-* Thanks to [@rmeleromira](https://github.com/rmeleromira) for their [ansible-fu which](https://github.com/rmeleromira/ansible-zencash-nodes) makes it easy to deploy and manage an army of these nodes.
+* Thanks to [@rmeleromira](https://github.com/rmeleromira) for their [ansible-fu]which (https://github.com/rmeleromira/ansible-zencash-nodes) makes it easy to deploy and manage a small (or large) army of these nodes.
 * Thanks to the [Zcash team](https://github.com/zcash) for creating Zcash, without which, none of this would be possible.
 
 ## Requirements
